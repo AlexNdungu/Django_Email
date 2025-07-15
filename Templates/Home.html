@@ -15,7 +15,10 @@
 
     <div class="main_body">
         <form class="email_form">
-            
+            {% csrf_token %}
+            <input type="text" id="email_subject" placeholder="Subject">
+            <textarea id="email_message" placeholder="Message"></textarea>
+            <div id="send_email_button" >Send Email</div>
         </form>
 
     </div>
